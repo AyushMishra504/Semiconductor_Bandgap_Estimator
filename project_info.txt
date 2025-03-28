@@ -1,0 +1,29 @@
+Semiconductor Bandgap Estimator
+
+Bandgap energy (Eg) is the minimum energy needed for an electron to jump from the valence band (where electrons are bound) to the conduction band (where electrons can move freely and conduct electricity). 
+
+Materials with a small bandgap (like Germanium) conduct electricity easily, while those with a large bandgap (like Silicon) need more energy to conduct. 
+
+The bandgap decreases as temperature increases, making it easier for electrons to jump and increasing conductivity.
+
+This project calculates the bandgap energy (Eg) of semiconductors as a function of temperature.
+The bandgap decreases as temperature increases due to atomic vibrations affecting electron behavior.
+
+The calculation is based on the Varshni equation:
+
+    Eg(T) = Eg(0) - (α * T²) / (T + β)
+
+where:
+- Eg(0) is the bandgap at absolute zero (0 K)
+- α and β are material-specific constants
+- T is the temperature in Kelvin
+
+Materials included:
+- Silicon (Si)
+- Gallium Arsenide (GaAs)
+- Germanium (Ge)
+
+The project provides:
+- A numerical calculation of the bandgap at different temperatures
+- A visual graph of bandgap vs. temperature
+- An option to save the graph as an image
